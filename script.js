@@ -2,21 +2,13 @@ $(window).on('load', () => {
 
     const API_URL = "https://dev.mykgproxy.webprofy.ru/frontend/";
 
-    const openPopupCancel = () => {
-        $('.js-popup-cancel').addClass('active');
-    };
+    const openPopupCancel = () => $('.js-popup-cancel').addClass('active');
 
-    const openPopupReserved = () => {
-        $('.js-popup-reserved').addClass('active');
-    };
+    const openPopupReserved = () => $('.js-popup-reserved').addClass('active');
 
-    const openErrorPopup = () => {
-        $('.js-popup-error').addClass('active');
-    };
+    const openErrorPopup = () => $('.js-popup-error').addClass('active');
 
-    const closePopup = (element) => {
-        element.closest('.popup').classList.remove('active');
-    };
+    const closePopup = (element) => element.closest('.popup').classList.remove('active');
 
     $('.js-close-popup').on('click', (e) => {
         closePopup(e.currentTarget);
